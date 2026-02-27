@@ -5,27 +5,27 @@ import { useState } from 'react';
 const faqs = [
     {
         question: 'Apakah tersedia kategori tiket yang berbeda?',
-        answer: '  nanti dijawab sama mas pandu.',
+        answer: 'Tersedia kategori tiket yang berbeda.',
     },
     {
         question: 'Apa Benefit membeli tiket Kategori VIP?',
-        answer: 'nanti dijawab sama mas pandu.',
+        answer: 'Benefit membeli tiket VIP adalah duduk di kursi dengan best view, dapet totebag dan bebas pilih 1 buku pandudunia.',
     },
     {
         question: 'Apakah tiket bisa direfund atau ditukar jadwal?',
-        answer: 'nanti dijawab sama mas pandu.',
+        answer: 'Tidak bisa wlee.',
     },
     {
         question: 'Apakah materi yang dibawakan sama di setiap kota pertunjukan?',
-        answer: 'nanti dijawab sama mas pandu.',
+        answer: 'Di setiap kota tur materi yang dibawakan 95% sama.',
     },
     {
         question: 'Apakah tersedia merchandise resmi di lokasi acara?',
-        answer: 'nanti dijawab sama mas pandu.',
+        answer: 'Tersedia Merch berupa buku dan totebag yang bisa kamu beli (rencananya).',
     },
     {
         question: 'Apakah selama durasi acara full Standup Comedy?',
-        answer: 'nanti dijawab sama mas pandu.',
+        answer: 'Rencananya akan ada sesi selain stand up comedy tapi kita lihat nanti apakah memungkinkan atau tidak.',
     },
 ];
 
