@@ -5,7 +5,7 @@ interface City {
     venue: string;
     date: string;
     status: CityStatus;
-    platform?: 'Megatix' | 'Comika';
+    platform?: string;
     ticketLink?: string;
 }
 
