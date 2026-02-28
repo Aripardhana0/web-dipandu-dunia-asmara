@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 :root {
   --color-red: #ce2121;
@@ -13,8 +13,8 @@
   --color-dark-medium: #141414;
   --color-dark-light: #1f1f1f;
 
-  --font-heading: 'Urbanist', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Urbanist', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
   --section-padding: 100px 0;
   --container-width: 1200px;
@@ -409,7 +409,7 @@ img {
 .section-title {
   font-size: clamp(1.8rem, 4vw, 3.2rem);
   color: white;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   letter-spacing: 2px;
 }
 
@@ -448,7 +448,7 @@ img {
 
 .about-stats {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
@@ -577,7 +577,7 @@ img {
 
 .cities-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
 }
 
 .cities-header p {
@@ -590,8 +590,10 @@ img {
 
 .cities-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 32px;
 }
 
 .city-card {
@@ -662,9 +664,9 @@ img {
 }
 
 .city-status.available {
-  background: rgba(206, 33, 33, 0.12);
-  color: var(--color-red-light);
-  border: 1px solid rgba(206, 33, 33, 0.25);
+  background: rgba(46, 204, 113, 0.12);
+  color: #2ecc71;
+  border: 1px solid rgba(46, 204, 113, 0.25);
 }
 
 .city-status.coming-soon {
@@ -685,7 +687,7 @@ img {
 
 .howto-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
 }
 
 .howto-header p {
@@ -847,7 +849,7 @@ img {
 
 .faq-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
 }
 
 .faq-header p {

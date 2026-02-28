@@ -8,7 +8,7 @@ export default function About() {
                             DIPANDU DUNIA ASMARA
                         </h2>
                         <p>
-                            Adalah Pertunjukkan Tunggal ke-3 dari Pandudunia setelah sebelumnya sukses dengan &quot;Penyair Radio&quot; dan &quot;Panduan Dalam Romansa&quot;.
+                            merupakan pertunjukkan tunggal ke-3 dari Pandudunia setelah sebelumnya sukses dengan &quot;Penyair Radio&quot; dan &quot;Panduan Dalam Romansa&quot;.
                         </p>
                         <p>
                             Tema besar yang akan ia angkat dalam pertunjukkannya ialah mengenai &quot;kehidupannya setelah menikah, apa hal baru yang ia dapat selama setahun belakangan, dan observasinya mengenai dunia asmara&quot;.
@@ -24,7 +24,7 @@ export default function About() {
                             <div className="stat-label">Menit Durasi Acara</div>
                         </div>
                         <div className="stat-card">
-                            <div className="stat-number">3</div>
+                            <div className="stat-number">4</div>
                             <div className="stat-label">Kota</div>
                         </div>
                         <div className="stat-card">

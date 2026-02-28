@@ -30,7 +30,48 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body>{children}</body>
+      <body>
+        {children}
+        <script defer async src="https://megatix.co.id/js/widgets/megatix.js"></script>
+        {/* Megatix redirect to #kota on close */}
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            // Listen for hash changes triggered by Megatix closing (empty or #/)
+            window.addEventListener('hashchange', function(e) {
+              const currentHash = window.location.hash;
+              if (currentHash === '' || currentHash === '#' || currentHash === '#/') {
+                e.preventDefault();
+                // Redirect back to the #kota section when the widget is closed
+                window.location.hash = '#kota';
+              }
+            }, false);
+
+            // Also lock body scroll when megatix is open to prevent background scrolling
+            const observer = new MutationObserver(function(mutations) {
+              mutations.forEach(function(mutation) {
+                mutation.addedNodes.forEach(function(node) {
+                  if (node.nodeType === 1 && (node.tagName === 'IFRAME' || node.id.includes('megatix') || node.className.includes('megatix'))) {
+                    document.body.style.overflow = 'hidden';
+                  }
+                });
+                mutation.removedNodes.forEach(function(node) {
+                  if (node.nodeType === 1 && (node.tagName === 'IFRAME' || node.id.includes('megatix') || node.className.includes('megatix'))) {
+                    document.body.style.overflow = '';
+                    // Backup check in case hashchange didn't fire properly
+                    if (window.location.hash === '' || window.location.hash === '#/') {
+                        window.location.hash = '#kota';
+                    }
+                  }
+                });
+              });
+            });
+
+            document.addEventListener('DOMContentLoaded', () => {
+              observer.observe(document.body, { childList: true });
+            });
+          `
+        }} />
+      </body>
     </html>
   );
 }

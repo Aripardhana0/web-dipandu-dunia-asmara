@@ -12,12 +12,12 @@ export default function Rules() {
     return (
         <section className="rules" id="peraturan" style={{ padding: 'var(--section-padding)', background: 'var(--color-dark)', opacity: 0, transform: 'translateY(100px)', animation: 'scrollFadeIn 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards', animationTimeline: 'view()', animationRange: 'entry 10% cover 40%' }}>
             <div className="container">
-                <div className="rules-header" style={{ textAlign: 'center', marginBottom: '60px' }}>
+                <div className="rules-header" style={{ textAlign: 'center', marginBottom: '32px' }}>
                     <h2 className="section-title">
                         PERATURAN SHOW
                     </h2>
                     <p style={{ fontSize: '1.05rem', color: 'var(--color-white)', opacity: 0.7, maxWidth: '600px', margin: '0 auto' }}>
-                        Tata tertib yang wajib dipatuhi selama menghadiri DIPANDU DUNIA ASMARA demi kenyamanan bersama.
+                        tata tertib yang wajib dipatuhi selama menghadiri show demi kenyamanan bersama.
                     </p>
                 </div>
 

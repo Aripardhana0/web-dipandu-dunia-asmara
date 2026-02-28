@@ -11,28 +11,36 @@ interface City {
 
 const cities: City[] = [
     {
-        name: 'Jakarta',
-        venue: 'Venue TBA',
-        date: '2026 • Tanggal Segera Diumumkan',
-        status: 'coming-soon' as const,
-        platform: 'Megatix',
-        ticketLink: 'https://megatix.co.id/'
-    },
-    {
         name: 'Purwokerto',
         venue: 'Venue TBA',
-        date: '2026 • Tanggal Segera Diumumkan',
-        status: 'coming-soon' as const,
-        platform: 'Megatix',
-        ticketLink: 'https://megatix.co.id/'
+        date: '2 Mei 2026',
+        status: 'available' as const,
+        platform: 'disini',
+        ticketLink: 'https://megatix.co.id/white-label/pandutour-purwokerto'
+    },
+    {
+        name: 'Bandung',
+        venue: 'Venue TBA',
+        date: '9 Mei 2026',
+        status: 'available' as const,
+        platform: 'disini',
+        ticketLink: 'https://megatix.co.id/white-label/pandutour-bandung'
+    },
+    {
+        name: 'Jakarta',
+        venue: 'Markas Comika - Jakarta',
+        date: '16 Mei 2026',
+        status: 'available' as const,
+        platform: 'disini',
+        ticketLink: 'https://megatix.co.id/white-label/pandutour-jakarta'
     },
     {
         name: 'Yogyakarta',
         venue: 'Venue TBA',
-        date: '2026 • Tanggal Segera Diumumkan',
-        status: 'coming-soon' as const,
-        platform: 'Megatix',
-        ticketLink: 'https://megatix.co.id/'
+        date: '23 Mei 2026',
+        status: 'available' as const,
+        platform: 'disini',
+        ticketLink: 'https://megatix.co.id/white-label/pandutour-yogyakarta'
     }
 ];
 
@@ -45,7 +53,7 @@ export default function Cities() {
                         CARA BELI TIKET SHOW
                     </h2>
                     <p>
-                        Pilih kota tempat kamu ingin menonton, checkout tiketnya melalui platform resmi, dan simpan e-tiketnya!
+                        pilih kota tempat kamu ingin menonton, checkout tiketnya melalui platform resmi, dan simpan e-tiketnya!
                     </p>
                 </div>
 
@@ -65,7 +73,7 @@ export default function Cities() {
                             <div style={{ marginTop: '24px' }}>
                                 {city.status === 'available' && city.ticketLink ? (
                                     <a href={city.ticketLink} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', width: '100%', textAlign: 'center', backgroundColor: 'var(--color-red)', color: 'white', padding: '12px 0', borderRadius: '50px', fontWeight: 600, fontSize: '0.9rem', transition: 'var(--transition)' }}>
-                                        Beli via {city.platform}
+                                        Beli {city.platform}
                                     </a>
                                 ) : (
                                     <button disabled style={{ display: 'inline-block', width: '100%', textAlign: 'center', backgroundColor: 'rgba(208, 211, 208, 0.05)', color: 'rgba(208, 211, 208, 0.4)', border: '1px solid rgba(208, 211, 208, 0.1)', padding: '12px 0', borderRadius: '50px', fontWeight: 600, fontSize: '0.9rem', cursor: 'not-allowed' }}>
