@@ -14,7 +14,7 @@ export default function About() {
                             Tema besar yang akan ia angkat dalam pertunjukkannya ialah mengenai &quot;kehidupannya setelah menikah, apa hal baru yang ia dapat selama setahun belakangan, dan observasinya mengenai dunia asmara&quot;.
                         </p>
                         <p>
-                            Pertunjukkan Ketiganya kali ini akan dilaksanakan di beberapa kota yaitu : Jakarta, Purwokerto dan Yogyakarta sebagai kota pamungkasnya.
+                            Pertunjukkan Ketiganya kali ini akan dilaksanakan di beberapa kota yaitu : Jakarta, Bandung, Purwokerto dan Yogyakarta sebagai kota pamungkasnya.
                         </p>
                     </div>
 
