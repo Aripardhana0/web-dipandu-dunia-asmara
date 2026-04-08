@@ -1,4 +1,4 @@
-type CityStatus = 'available' | 'coming-soon';
+type CityStatus = 'available' | 'coming-soon' | 'sold-out';
 
 interface City {
     name: string;
@@ -12,7 +12,7 @@ interface City {
 const cities: City[] = [
     {
         name: 'Purwokerto',
-        venue: 'Venue TBA',
+        venue: 'Hetero Space Banyumas',
         date: '2 Mei 2026',
         status: 'available' as const,
         platform: 'disini',
@@ -22,7 +22,7 @@ const cities: City[] = [
         name: 'Bandung',
         venue: 'Venue TBA',
         date: '9 Mei 2026',
-        status: 'available' as const,
+        status: 'sold-out' as const,
         platform: 'disini',
         ticketLink: 'https://megatix.co.id/white-label/pandutour-bandung'
     },
@@ -67,7 +67,7 @@ export default function Cities() {
                                 <svg width="10" height="10" viewBox="0 0 10 10">
                                     <circle cx="5" cy="5" r="5" fill="currentColor" />
                                 </svg>
-                                {city.status === 'available' ? 'Tiket Tersedia' : 'Coming Soon'}
+                                {city.status === 'available' ? 'Tiket Tersedia' : city.status === 'sold-out' ? 'TIKET HABIS' : 'Coming Soon'}
                             </span>
                             {/* Always show a disabled button if coming soon, or an active link otherwise */}
                             <div style={{ marginTop: '24px' }}>
@@ -77,7 +77,7 @@ export default function Cities() {
                                     </a>
                                 ) : (
                                     <button disabled style={{ display: 'inline-block', width: '100%', textAlign: 'center', backgroundColor: 'rgba(208, 211, 208, 0.05)', color: 'rgba(208, 211, 208, 0.4)', border: '1px solid rgba(208, 211, 208, 0.1)', padding: '12px 0', borderRadius: '50px', fontWeight: 600, fontSize: '0.9rem', cursor: 'not-allowed' }}>
-                                        Belum Tersedia
+                                        {city.status === 'sold-out' ? 'TIKET HABIS' : 'Belum Tersedia'}
                                     </button>
                                 )}
                             </div>

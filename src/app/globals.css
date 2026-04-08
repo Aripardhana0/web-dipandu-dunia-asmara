@@ -675,6 +675,12 @@ img {
   border: 1px solid rgba(129, 167, 183, 0.25);
 }
 
+.city-status.sold-out {
+  background: rgba(206, 33, 33, 0.12);
+  color: var(--color-red);
+  border: 1px solid rgba(206, 33, 33, 0.25);
+}
+
 .howto {
   padding: var(--section-padding);
   background: var(--color-dark);
