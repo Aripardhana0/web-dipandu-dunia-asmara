@@ -36,7 +36,7 @@ const cities: City[] = [
     },
     {
         name: 'Yogyakarta',
-        venue: 'Venue TBA',
+        venue: 'IFI-LIP Yogyakarta',
         date: '23 Mei 2026',
         status: 'available' as const,
         platform: 'disini',
